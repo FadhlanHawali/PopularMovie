@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" 	#c9c9c9"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CardView.MainActivityAlbum"
+    tools:showIn="@layout/activity_main_album">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#ffff"
+            android:text="Popular"
+            android:background="#c9c9c9"
+            android:id="@+id/SortByPopular"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#ffff"
+            android:text="Discover"
+            android:background="#c9c9c9"
+            android:id="@+id/Discover"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/linear"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#9f9f9f"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar2"
+        android:id="@+id/atas"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imgNetwork2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:visibility="invisible">
+        </com.android.volley.toolbox.NetworkImageView>
+
+        <ImageView
+            android:id="@+id/gambar_poster"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul :"
+            android:textSize="12sp"/>
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/judul_film"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JUDUL FILM"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Rilis :"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/release_date"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2017-08-09"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rating :"
+                android:textSize="12sp"/>
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/rating"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7.3/10"/>
+            <Button
+                android:id="@+id/favorite"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add as Favorite"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/deskrip"
+        android:layout_below="@+id/atas"
+        android:textSize="18sp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi Film :" />
+    <TextView
+        android:layout_below="@+id/deskrip"
+        android:id="@+id/deskripsi_film"
+        android:textSize="14sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="asdpiasdapd"/>
+    <TextView
+        android:id="@+id/trail"
+        android:layout_below="@+id/deskripsi_film"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Trailer :"/>
+    <TextView
+        android:id="@+id/review"
+        android:layout_below="@+id/recycler_view_trailer"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Review :"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/review"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/recycler_view_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/trail"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/recycler_view_trailer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+</RelativeLayout>
+    </LinearLayout>
+</ScrollView>

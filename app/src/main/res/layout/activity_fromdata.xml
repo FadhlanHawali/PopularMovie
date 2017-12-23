@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_nama"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edit_text_nama"
+        android:hint="Ketik Nama Disini"
+        android:layout_width="match_parent"
+        android:padding="7dp"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content" />
+
+</android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_hobi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_input_nama">
+
+        <EditText
+            android:id="@+id/edit_text_hobi"
+            android:hint="Ketik Hobi Disini"
+            android:layout_width="match_parent"
+            android:padding="7dp"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/Add_Data"
+        android:layout_below="@+id/text_input_hobi"
+        android:textColor="@android:color/white"
+        android:text="Add Data"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</RelativeLayout>

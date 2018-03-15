@@ -1,14 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'key0'
-            keyPassword 'pintar123'
-            storeFile file('C:/Users/Iman Satyarno/key.jks')
-            storePassword 'pintar123'
-        }
-    }
+
     compileSdkVersion 26
     defaultConfig {
         applicationId "hidee.popularmovie"
@@ -18,7 +11,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "com.android.test.runner.MultiDexTestRunner"
         multiDexEnabled true
-        signingConfig signingConfigs.config
+
 
     }
     buildTypes {
